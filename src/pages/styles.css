@@ -1,0 +1,23 @@
+.divider{
+    border-style: dashed;
+    border-width: 0.1rem;
+    border-top-style: none;
+    padding: 2rem;
+}
+.feed{
+    padding: 5rem;
+}
+.regularfeed{
+    padding: 2rem;
+}
+.footer{
+    background-color: #222831;
+    text-align: center;
+    color: azure;
+}
+.hr{
+    background-color: antiquewhite;
+}
+.FSH{
+    margin: 0.2rem;
+}
