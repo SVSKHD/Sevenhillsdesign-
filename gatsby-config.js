@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `SevenHills Tirupati | Tirupati | India`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `Sevenhills Tirupati`,
+    url:"https://www.sevenhillstirupati.com",
+    siteUrl:"https://www.sevenhillstirupati.com",
   },
   plugins: [
     {
@@ -56,5 +58,13 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve:`gatsby-plugin-robots-txt`,
+      options:{
+        host:"https://www.sevenhillstirupati.com"
+        sitemap:"https://www.sevenhillstirupati.com/sitemap.xml"
+      }
+    },
   ],
 }

@@ -10,7 +10,7 @@ export default function Event(){
       <Jumbotron className="jumbo" fluid>
         <Container fluid>
           <h1 className="heading">Our Youtube Channel</h1>
-          <Button outline color="danger"><FaYoutube size={25}/></Button>
+          <Button href="https://www.youtube.com/channel/UCRFH9IWO1_aep984wT9oN-g" outline color="danger"><FaYoutube size={25}/></Button>
         </Container>
       </Jumbotron>
     </div>
