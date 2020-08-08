@@ -11,6 +11,7 @@ import Event from "../components/jumbotron";
 import EventCard from "../components/eventcard";
 import { Featuredslugtourl } from "../utils/featuredslugtourl";
 import { Blogslugtourl } from "../utils/Blogslugurl";
+import Seo from "../components/seo";
 
 
 
@@ -18,6 +19,11 @@ const IndexPage = ({data}) => (
  
     <div> 
       <Layout>
+        <Seo
+        title="Sevenhills | Frontpage of Tirupati & Tirumala"
+        description="Best combination of Social and devotional community, we have best Moral stories from our History"
+        keywords="SevenhillsTirupati, Tirupati ,tirumala, Tirupati balaji, TTD, Tirumala tirupati Devasthanam"
+        />
         <Container>
        <Row xs="1" md="2" lg="4">
          <Col lg="7" md="6">

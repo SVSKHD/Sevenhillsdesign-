@@ -2,14 +2,16 @@ module.exports = {
   siteMetadata: {
     title: `SevenHills Tirupati | Frontpage of Tirupati & Tirumala | India`,
     description: `We are best combination of Social and devotional crowd`,
-    author: `Sevenhills Tirupati`,
+    author: "Sevenhills Tirupati",
+    keywords:"Sevenhills tirupati,Tirupati,Tirumala,tirupati balaji, Balaji Venkateswara",
+    image:"/ST.jpg",
     url:"https://www.sevenhillstirupati.com",
     siteUrl:"https://www.sevenhillstirupati.com",
   },
   plugins: [
     {
       resolve: `gatsby-plugin-canonical-urls`,
-    options: {
+      options: {
       siteUrl: `https://www.sevenhillstirupati.com`,
       stripQueryString: true,
     },
@@ -29,7 +31,7 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `https://sevenhillscms.herokuapp.com`,
-        queryLimit: 1000, // Default to 100
+        queryLimit: 10000, 
         contentTypes: [`blogposts`,`featured-contents`],
       },
     },
@@ -62,9 +64,9 @@ module.exports = {
     {
       resolve:`gatsby-plugin-robots-txt`,
       options:{
-        host:"https://www.sevenhillstirupati.com"
+        host:"https://www.sevenhillstirupati.com",
         sitemap:"https://www.sevenhillstirupati.com/sitemap.xml"
-      }
+      },
     },
   ],
 }
