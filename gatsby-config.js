@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `SevenHills Tirupati | Tirupati | India`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `SevenHills Tirupati | Frontpage of Tirupati & Tirumala | India`,
+    description: `We are best combination of Social and devotional crowd`,
     author: `Sevenhills Tirupati`,
     url:"https://www.sevenhillstirupati.com",
     siteUrl:"https://www.sevenhillstirupati.com",
