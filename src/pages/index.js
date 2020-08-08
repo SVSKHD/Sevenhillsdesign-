@@ -23,7 +23,7 @@ const IndexPage = ({data}) => (
          <h2>SpotLight</h2>
          <hr/>
          {data.allStrapiFeaturedContents.nodes.map(featured=>(
-          <Featuredcard className="featurepost"
+          <Featuredcard 
          title={featured.Title}
          content={featured.Content}
          fluid={featured.CoverImage.childImageSharp.fluid}
@@ -35,12 +35,12 @@ const IndexPage = ({data}) => (
          <Col lg="5" md="6">
          <h1>Events</h1>
          <hr/>
-         <EventCard/>
+         <EventCard className="hover"/>
          <hr/>
          <h1>Share to your feed</h1>
          <SocialCollapsible/>
          <hr/>
-         <Event/>
+         <Event className="hover"/>
          </Col>
         </Row>
         </Container>
