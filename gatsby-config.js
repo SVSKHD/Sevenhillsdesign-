@@ -6,9 +6,27 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+    options: {
+      siteUrl: `https://www.sevenhillstirupati.com`,
+      stripQueryString: true,
+    },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-174931186-1",
+        head: true,
+        anonymize:true,
+        respectDNT:true,
+        pageTransitionDelay:0,
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+      },
+    },
+    {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://sevenhillscms.herokuapp.com`,
+        apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
         contentTypes: [`blogposts`,`featured-contents`],
       },

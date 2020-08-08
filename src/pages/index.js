@@ -2,6 +2,7 @@ import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container,Row,Col, Button} from "reactstrap"
 import "./styles.css"
+import "../components/css/card.css"
 import Layout from "../components/layouts/layout";
 import Featuredcard from "../components/featuredcard";
 import Regularcard from "../components/regularcard";

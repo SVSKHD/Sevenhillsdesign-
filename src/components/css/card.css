@@ -12,6 +12,24 @@
     margin: 4.5rem;
     text-align: center;
 }
+.featuredtitle{
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: darkslategrey;
+    font-family: Helvetica;
+}
+.featuredtext{
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    color: darkslategray;
+
+}
+.featuredbutton{
+    margin:0.3rem;
+    color: darkslategray;
+}
 .regularcard{
     transition: 1s ease;
     text-align: center;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Jumbotron, Container, Button } from 'reactstrap';
 import "./css/jumbotron.css"
+import "./css/card.css"
 import {FaYoutube} from "react-icons/fa"
 
 export default function Event(){
