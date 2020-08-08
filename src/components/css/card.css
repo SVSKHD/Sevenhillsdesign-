@@ -12,3 +12,23 @@
     margin: 4.5rem;
     text-align: center;
 }
+.regularcard{
+    transition: 1s ease;
+    text-align: center;
+}
+.regularcard:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+.featuredcard{
+    transition: 1s ease;
+
+}
+.featuredcard:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+}

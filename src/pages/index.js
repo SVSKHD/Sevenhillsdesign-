@@ -8,6 +8,8 @@ import Regularcard from "../components/regularcard";
 import SocialCollapsible from "../components/socialcollapsible";
 import Event from "../components/jumbotron";
 import EventCard from "../components/eventcard";
+import { Featuredslugtourl } from "../utils/featuredslugtourl";
+import { Blogslugtourl } from "../utils/Blogslugurl";
 
 
 
@@ -26,6 +28,7 @@ const IndexPage = ({data}) => (
          content={featured.Content}
          fluid={featured.CoverImage.childImageSharp.fluid}
          time={featured.createdAt}
+         link={Featuredslugtourl(featured.slug)}
          />
          ))}
          </Col>
@@ -57,6 +60,7 @@ const IndexPage = ({data}) => (
          subtitle={post.SubTitle}
          content={post.Content}
          fluid={post.CoverImage.childImageSharp.fluid}
+         link={Blogslugtourl(post.slug)}
          />
          <hr/>
          </Col>

@@ -1,0 +1,1 @@
+export const Blogslugtourl =(slug)=>`/blog/${slug}`;
