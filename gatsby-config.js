@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://sevenhillscms.herokuapp.com/`,
+        apiURL: `https://sevenhillscms.herokuapp.com`,
         queryLimit: 1000, // Default to 100
         contentTypes: [`blogposts`,`featured-contents`],
       },
