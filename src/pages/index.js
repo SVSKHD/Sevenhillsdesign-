@@ -12,6 +12,7 @@ import EventCard from "../components/eventcard";
 import { Featuredslugtourl } from "../utils/featuredslugtourl";
 import { Blogslugtourl } from "../utils/Blogslugurl";
 import Seo from "../components/seo";
+import LandingpageSchema from "../components/schema/landingpageSchema";
 
 
 
@@ -24,6 +25,7 @@ const IndexPage = ({data}) => (
         description="Best combination of Social and devotional community, we have best Moral stories from our History"
         keywords="SevenhillsTirupati, Tirupati ,tirumala, Tirupati balaji, TTD, Tirumala tirupati Devasthanam"
         />
+        <LandingpageSchema/>
         <Container>
        <Row xs="1" md="2" lg="4">
          <Col lg="7" md="6">

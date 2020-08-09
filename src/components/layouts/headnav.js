@@ -23,30 +23,27 @@ const Headnav = (props) => {
   return (
     <div>
       <Navbar light expand="md">
-        <NavbarBrand href="/"><h4>SevenHills</h4></NavbarBrand>
+        <NavbarBrand href="/"><h4 className="navtitle">SevenHills</h4></NavbarBrand>
         <NavbarToggler outline color="dark" onClick={toggle}><FaGopuram size={26}/></NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink>Components</NavLink>
-            </NavItem>
             <NavItem>
               <NavLink>Services</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                Categories
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                  Photography
                 </DropdownItem>
                 <DropdownItem>
-                  Option 2
+                  FoodBloggers
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  Reset
+                  More
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>

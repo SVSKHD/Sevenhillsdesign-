@@ -57,15 +57,14 @@ export default function Seo ({title,description,image,keywords,url,author}) {
             property: 'og:title', 
             content: metatitle
           },
-       
           { 
             property: 'og:type', 
-            content: "Tech-Blog" 
+            content: "website" 
           },
           { 
           property: 'og:url', 
           content: metaUrl
-        },
+          },
           { 
             property: 'og:description', 
             content: metaDescription 

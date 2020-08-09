@@ -1,3 +1,8 @@
+.navtitle{
+    font-weight: bold;
+    font-style: italic;
+    color: #ff4301;
+}
 .divider{
     border-style: dashed;
     border-width: 0.1rem;
