@@ -2,7 +2,7 @@ import React from "react"
 import {Helmet} from "react-helmet"
 import {graphql, StaticQuery} from "gatsby"
 
-export default function Seo ({title,subtitle, description,content,image,keywords,url,author}) {
+export default function Seo ({title,description,image,keywords,url,author}) {
   return(
     <StaticQuery
     query={detailsQuery}
@@ -48,6 +48,10 @@ export default function Seo ({title,subtitle, description,content,image,keywords
           {
             name:`url`,
             content:metaUrl
+          },
+          {
+            property:'og:locale',
+            content:'en_EU'
           },
           { 
             property: 'og:title', 

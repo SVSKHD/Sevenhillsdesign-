@@ -23,7 +23,6 @@ const IndexPage = ({data}) => (
         title="Sevenhills | Frontpage of Tirupati & Tirumala"
         description="Best combination of Social and devotional community, we have best Moral stories from our History"
         keywords="SevenhillsTirupati, Tirupati ,tirumala, Tirupati balaji, TTD, Tirumala tirupati Devasthanam"
-  
         />
         <Container>
        <Row xs="1" md="2" lg="4">
