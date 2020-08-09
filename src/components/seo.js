@@ -18,8 +18,8 @@ export default function Seo ({title,subtitle, description,content,image,keywords
         title={title}
         meta={[
           {
-            name:`yandex-verification`,
-            content:`7f3625bf938da52c`
+          name:`yandex-verification`,
+          content:"7f3625bf938da52c"
           },
           {
             name:`robots`,

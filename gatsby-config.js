@@ -4,7 +4,7 @@ module.exports = {
     description: `We are best combination of Social and devotional crowd`,
     author: "Sevenhills Tirupati",
     keywords:"Sevenhills tirupati,Tirupati,Tirumala,tirupati balaji, Balaji Venkateswara",
-    image:"/ST.jpg",
+    image:"./src/images/ST.jpg",
     url:"https://www.sevenhillstirupati.com",
     siteUrl:"https://www.sevenhillstirupati.com",
   },
@@ -64,8 +64,13 @@ module.exports = {
     {
       resolve:`gatsby-plugin-robots-txt`,
       options:{
-        host:"https://www.sevenhillstirupati.com",
-        sitemap:"https://www.sevenhillstirupati.com/sitemap.xml"
+        query: `{
+            site {
+            siteMetadata {
+            siteUrl
+          }
+         }        
+        }`
       },
     },
   ],
