@@ -8,11 +8,17 @@ import "./pages.css/featuredpage.css"
 import {Link} from "gatsby"
 import {FaBackward} from "react-icons/fa"
 import BlogpageCollpasible from '../components/blogpagecollpasible'
+import Seo from "../components/seo"
 
 export default function Featuredpostpage({data}) {
     return (
         <div>
            <Layout>
+             <Seo
+             title={data.strapiFeatureds.Title}
+             description={data.strapiFeatureds.Content.substring(0,200)}
+             keywords={data.strapiFeatureds.keywords}
+             />
            <div className="return">
                   <Container>
                   <Link to="/">
@@ -27,7 +33,7 @@ export default function Featuredpostpage({data}) {
            <Col>
            <div className="Titles">
            <h1>{data.strapiFeatureds.Title}</h1>
-           <h2>{data.strapiFeatureds.Subtitle}</h2>
+           <h2>{data.strapiFeatureds.keywords}</h2>
            </div>
            <Img className="img" width="100%" fluid={data.strapiFeatureds.Cover.childImageSharp.fluid} alt={data.strapiFeatureds.Subtitle}/>
            </Col>
@@ -42,6 +48,7 @@ export default function Featuredpostpage({data}) {
                </Jumbotron>
             </Container>
            </div>
+           {/* Blog end section */}
             <Container>
              <Row>
               <Col>
@@ -63,6 +70,7 @@ query featuredQuery {
       Title
       Subtitle
       Content
+      keywords
       createdAt(fromNow: true)
       slug
       Cover {

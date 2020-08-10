@@ -14,7 +14,11 @@ export default function Blogpage({data}) {
     return (
         <div>
             <Layout>
-                <Seo/>
+                <Seo
+                title={data.strapiBlogposts.Title}
+                description={data.strapiBlogposts.Content.substring(0,200)}
+                keywords={data.strapiBlogposts.Keywords}
+                />
                  <div className="titlesection">
                  <div className="return">
                   <Container>
@@ -68,6 +72,7 @@ query BlogpageQuery($id:String!) {
       Title
       SubTitle
       Content
+      Keywords
       createdAt(fromNow: true)
       slug
       id
