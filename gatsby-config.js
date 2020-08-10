@@ -30,9 +30,9 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://sevenhillscms.herokuapp.com`,
+        apiURL: `http://localhost:1337`,
         queryLimit: 10000, 
-        contentTypes: [`blogposts`,`featured-contents`],
+        contentTypes: [`blogposts`,`featureds`],
       },
     },
     `gatsby-plugin-react-helmet`,

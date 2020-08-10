@@ -1,0 +1,24 @@
+.Titles{
+padding: 3rem;
+}
+.Content{
+    padding: 3rem;
+}
+.img{
+    border-radius: 2rem;
+    transition: 1s ease;
+}
+.img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease; 
+}
+.contentplacer{
+background-color:white;
+box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
+transition: box-shadow 0.3s ease-in-out;
+}
+.contentplacer:hover{
+    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+}

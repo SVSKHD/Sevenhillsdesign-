@@ -15,7 +15,7 @@ exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
     const getfeaturedposts = makeRequest(graphql, `
     query MyQuery {
-        allStrapiFeaturedContents {
+      allStrapiFeatureds {
           edges {
             node {
               slug
@@ -26,7 +26,7 @@ exports.createPages = ({ actions, graphql }) => {
       }      
       `).then(result => {
       // Create pages for each article.
-      result.data.allStrapiFeaturedContents.edges.forEach(({ node }) => {
+      result.data.allStrapiFeatureds.edges.forEach(({ node }) => {
         createPage({
           path: `featured/${node.slug}`,
           component: path.resolve(`src/template/featuredpostpage.js`),

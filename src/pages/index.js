@@ -27,15 +27,15 @@ const IndexPage = ({data}) => (
         />
         <LandingpageSchema/>
         <Container>
-       <Row xs="1" md="2" lg="4">
+        <Row xs="1" md="2" lg="4">
          <Col lg="7" md="6">
          <h2>SpotLight</h2>
          <hr/>
-         {data.allStrapiFeaturedContents.nodes.map(featured=>(
-          <Featuredcard 
+         {data.allStrapiFeatureds.nodes.map(featured=>(
+         <Featuredcard 
          title={featured.Title}
          content={featured.Content}
-         fluid={featured.CoverImage.childImageSharp.fluid}
+         fluid={featured.Cover.childImageSharp.fluid}
          time={featured.createdAt}
          link={Featuredslugtourl(featured.slug)}
          />
@@ -85,29 +85,29 @@ const IndexPage = ({data}) => (
 export default IndexPage
 
 export const pageQuery=graphql`
-query landingpageQuery {
-  allStrapiBlogposts (limit: 12, sort: {order: DESC, fields: id}){
-    nodes {
-      Title
-      SubTitle
-      Content
-      slug
-      id
-      CoverImage {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
+ query landingpageQuery {
+   allStrapiBlogposts (limit: 12, sort: {order: DESC, fields: id}){
+     nodes {
+       Title
+       SubTitle
+       Content
+       slug
+       id
+       CoverImage {
+         childImageSharp {
+           fluid {
+             ...GatsbyImageSharpFluid
+           }
+         }
+       }
+     }
   }
-  allStrapiFeaturedContents (limit: 1, sort: {order: DESC, fields: id}) {
-    nodes {
+   allStrapiFeatureds (limit: 1, sort: {order: DESC, fields: id}) {     nodes {
       Title
+      Subtitle
       Content
       slug
-      CoverImage {
+      Cover{
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid

@@ -19,6 +19,12 @@
     color: darkslategrey;
     font-family: Helvetica;
 }
+.featuredsecondtitle{
+    font-size: 1rem;
+    color: darkslategray;
+    font-family: Helvetica;
+    font-style: italic;
+}
 .featuredtext{
     font-size: 1rem;
     font-weight: bold;
@@ -42,7 +48,6 @@
 }
 .featuredcard{
     transition: 1s ease;
-
 }
 .featuredcard:hover{
     -webkit-transform: scale(1.1);
