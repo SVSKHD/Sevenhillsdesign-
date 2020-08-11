@@ -32,6 +32,7 @@ const IndexPage = ({data}) => (
         img2="https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         img3="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         />
+        <div className="headsection">
         <Container>
         <Row xs="1" md="2" lg="4">
          <Col lg="7" md="6">
@@ -59,6 +60,7 @@ const IndexPage = ({data}) => (
          </Col>
         </Row>
         </Container>
+        </div>
         <hr className="divider"/>
 
         {/* regular feed */}
