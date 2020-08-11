@@ -18,7 +18,7 @@ import Slider from "../components/Slider";
 
 
 const IndexPage = ({data}) => (
- 
+//  const seoImage="" 
     <div> 
       <Layout>
         <Seo

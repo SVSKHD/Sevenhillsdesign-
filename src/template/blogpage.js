@@ -11,6 +11,7 @@ import {Link} from "gatsby"
 import BlogpageCollpasible from "../components/blogpagecollpasible"
 
 export default function Blogpage({data}) {
+  const seoImage="https://www.sevenhillstirupati.com" +data.strapiBlogposts.Cover.publicURL
     return (
         <div>
             <Layout>
@@ -18,6 +19,7 @@ export default function Blogpage({data}) {
                 title={data.strapiBlogposts.Title}
                 description={data.strapiBlogposts.Content.substring(0,200)}
                 keywords={data.strapiBlogposts.Keywords}
+                image={seoImage}
                 />
                  <div className="titlesection">
                  <div className="return">
@@ -77,6 +79,7 @@ query BlogpageQuery($id:String!) {
       slug
       id
       CoverImage {
+        publicURL
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid

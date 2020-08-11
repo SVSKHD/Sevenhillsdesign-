@@ -32,7 +32,7 @@ module.exports = {
       options: {
         apiURL: `https://sevenhillscms.herokuapp.com`,
         queryLimit: 10000, 
-        contentTypes: [`blogposts`,`featureds`],
+        contentTypes: [`blogposts`,`featureds`,`titleimages`],
       },
     },
     `gatsby-plugin-react-helmet`,

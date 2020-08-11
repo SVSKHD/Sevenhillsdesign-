@@ -11,13 +11,15 @@ import BlogpageCollpasible from '../components/blogpagecollpasible'
 import Seo from "../components/seo"
 
 export default function Featuredpostpage({data}) {
-    return (
+  const seoImage="https://www.sevenhillstirupati.com" +data.strapiFeatureds.Cover.publicURL
+  return (
         <div>
            <Layout>
              <Seo
              title={data.strapiFeatureds.Title}
              description={data.strapiFeatureds.Content.substring(0,200)}
              keywords={data.strapiFeatureds.keywords}
+             image={seoImage}
              />
            <div className="return">
                   <Container>
@@ -74,6 +76,7 @@ query featuredQuery {
       createdAt(fromNow: true)
       slug
       Cover {
+        publicURL
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
