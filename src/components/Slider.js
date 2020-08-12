@@ -11,12 +11,12 @@ const Slider = (props) => {
   const items = [
     {
       src:props.img1,
-      altText: "Slide 1",
+      altText:props.alt1,
       caption: "Slide 1"
     },
     {
       src:props.img2,
-      altText: "Slide 2",
+      altText:props.alt2,
       caption: "Slide 2"
     },
   

@@ -31,7 +31,9 @@ const IndexPage = ({data}) => {
         <LandingpageSchema/>
         <Slider
         img1="https://res.cloudinary.com/sevenhills/image/upload/v1597211526/Untitled_design_1_eff8cc4010.jpg"
+        alt1="Sevenhills tirupati"
         img2="https://res.cloudinary.com/sevenhills/image/upload/v1597211526/Untitled_design_293d510cee.jpg"
+        alt2="Sevenhills tirupati"
         />
         <div className="headsection">
         <Container>
