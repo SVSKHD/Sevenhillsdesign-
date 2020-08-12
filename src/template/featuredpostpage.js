@@ -11,6 +11,7 @@ import BlogpageCollpasible from '../components/blogpagecollpasible'
 import Seo from "../components/seo"
 
 export default function Featuredpostpage({data}) {
+  
   const seoImage="https://www.sevenhillstirupati.com" +data.strapiFeatureds.Cover.publicURL
   return (
         <div>

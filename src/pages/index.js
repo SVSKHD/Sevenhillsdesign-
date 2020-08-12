@@ -18,14 +18,15 @@ import Slider from "../components/Slider";
 
 
 const IndexPage = ({data}) => {
-  
-    return(
+  const seoImage="https://www.sevenhillstirupati.com//static/b25722194dcdf923e7445c11e4407922/8384ed188b98bc023a3befbf1472d760.jpg"  
+  return(
     <div> 
       <Layout>
         <Seo
         title="Sevenhills | Frontpage of Tirupati & Tirumala"
         description="Best combination of Social and devotional community, we have best Moral stories from our History"
         keywords="SevenhillsTirupati, Tirupati ,tirumala, Tirupati balaji, TTD, Tirumala tirupati Devasthanam"
+        image={seoImage}
         />
         <LandingpageSchema/>
         <Slider
