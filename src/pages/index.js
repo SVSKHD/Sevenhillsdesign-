@@ -18,7 +18,7 @@ import Slider from "../components/Slider";
 
 
 const IndexPage = ({data}) => {
-  const seoImage="https://www.sevenhillstirupati.com"+ data.allStrapiTitleimages.titleimage.publicURL 
+  
     return(
     <div> 
       <Layout>
@@ -26,7 +26,6 @@ const IndexPage = ({data}) => {
         title="Sevenhills | Frontpage of Tirupati & Tirumala"
         description="Best combination of Social and devotional community, we have best Moral stories from our History"
         keywords="SevenhillsTirupati, Tirupati ,tirumala, Tirupati balaji, TTD, Tirumala tirupati Devasthanam"
-        image={seoImage}
         />
         <LandingpageSchema/>
         <Slider
