@@ -30,9 +30,8 @@ const IndexPage = ({data}) => {
         />
         <LandingpageSchema/>
         <Slider
-        img1="https://images.pexels.com/photos/853199/pexels-photo-853199.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        img2="https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        img3="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        img1="https://res.cloudinary.com/sevenhills/image/upload/v1597211526/Untitled_design_1_eff8cc4010.jpg"
+        img2="https://res.cloudinary.com/sevenhills/image/upload/v1597211526/Untitled_design_293d510cee.jpg"
         />
         <div className="headsection">
         <Container>

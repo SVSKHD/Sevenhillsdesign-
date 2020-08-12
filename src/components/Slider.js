@@ -19,11 +19,7 @@ const Slider = (props) => {
       altText: "Slide 2",
       caption: "Slide 2"
     },
-    {
-      src:props.img3,
-      altText: "Slide 3",
-      caption: "Slide 3"
-    }
+  
   ];
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
