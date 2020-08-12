@@ -11,7 +11,7 @@ import {Link} from "gatsby"
 import BlogpageCollpasible from "../components/blogpagecollpasible"
 
 export default function Blogpage({data}) {
-  const seoImage="https://www.sevenhillstirupati.com" +data.strapiBlogposts.Cover.publicURL
+  const seoImage="https://www.sevenhillstirupati.com" +data.strapiBlogposts.CoverImage.publicURL
     return (
         <div>
             <Layout>
