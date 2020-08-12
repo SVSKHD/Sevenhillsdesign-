@@ -17,14 +17,16 @@ import Slider from "../components/Slider";
 
 
 
-const IndexPage = ({data}) => (
-//  const seoImage="" 
+const IndexPage = ({data}) => {
+  const seoImage="https://www.sevenhillstirupati.com"+ data.allStrapiTitleimages.titleimage.publicURL 
+    return(
     <div> 
       <Layout>
         <Seo
         title="Sevenhills | Frontpage of Tirupati & Tirumala"
         description="Best combination of Social and devotional community, we have best Moral stories from our History"
         keywords="SevenhillsTirupati, Tirupati ,tirumala, Tirupati balaji, TTD, Tirumala tirupati Devasthanam"
+        image={seoImage}
         />
         <LandingpageSchema/>
         <Slider
@@ -89,6 +91,7 @@ const IndexPage = ({data}) => (
       </Layout>
     </div>
 )
+}
 
 export default IndexPage
 
@@ -125,6 +128,13 @@ export const pageQuery=graphql`
         }
       }
       createdAt(fromNow: true)
+    }
+  }
+  allStrapiTitleimages {
+    nodes {
+      titleimage {
+        publicURL
+      }
     }
   }
 }
