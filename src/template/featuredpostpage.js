@@ -35,7 +35,7 @@ export default function Featuredpostpage({data}) {
            <Col>
            <div className="Titles">
            <h1>{data.strapiFeatureds.Title}</h1>
-           <h2>{data.strapiFeatureds.keywords}</h2>
+           <h2>{data.strapiFeatureds.Subtitle}</h2>
            </div>
            <Img className="img" width="100%" fluid={data.strapiFeatureds.Cover.childImageSharp.fluid} alt={data.strapiFeatureds.Subtitle}/>
            </Col>
