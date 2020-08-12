@@ -12,12 +12,14 @@ const Slider = (props) => {
     {
       src:props.img1,
       altText:props.alt1,
-      caption: "Slide 1"
+      header:"SevenhillsTirupati",
+      caption: "Alipri"
     },
     {
       src:props.img2,
       altText:props.alt2,
-      caption: "Slide 2"
+      header:"Sevenhills Tirupati",
+      caption: "Srivari mettu"
     },
   
   ];
@@ -52,7 +54,7 @@ const Slider = (props) => {
         <img className="d-block w-100" src={item.src} alt={item.altText} />
         <CarouselCaption
           captionText={item.caption}
-          captionHeader={item.caption}
+          captionHeader={item.header}
         />
       </CarouselItem>
     );
