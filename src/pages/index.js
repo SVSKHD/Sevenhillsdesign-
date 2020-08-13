@@ -7,13 +7,17 @@ import Layout from "../components/layouts/layout";
 import Featuredcard from "../components/featuredcard";
 import Regularcard from "../components/regularcard";
 import SocialCollapsible from "../components/socialcollapsible";
-import Event from "../components/jumbotron";
+import Event from "../components/jumbotroncard"
 import EventCard from "../components/eventcard";
 import { Featuredslugtourl } from "../utils/featuredslugtourl";
 import { Blogslugtourl } from "../utils/Blogslugurl";
 import Seo from "../components/seo";
 import LandingpageSchema from "../components/schema/landingpageSchema";
 import Slider from "../components/Slider";
+import Coronacard from "../components/coronacard";
+import {FaVoteYea} from "react-icons/fa"
+import {Link} from "gatsby"
+import Darshancount from "../components/Darshancount";
 
 
 
@@ -23,22 +27,17 @@ const IndexPage = ({data}) => {
     <div> 
       <Layout>
         <Seo
-        title="Sevenhills | Frontpage of Tirupati & Tirumala"
+        title="SevenhillsTirupati | Frontpage of Tirupati & Tirumala"
         description="Best combination of Social and devotional community, we have best Moral stories from our History"
         keywords="SevenhillsTirupati, Tirupati ,tirumala, Tirupati balaji, TTD, Tirumala tirupati Devasthanam"
         image={seoImage}
         />
         <LandingpageSchema/>
-        <Slider
-        img1="https://res.cloudinary.com/sevenhills/image/upload/v1597211526/Untitled_design_1_eff8cc4010.jpg"
-        alt1="Sevenhills tirupati"
-        img2="https://res.cloudinary.com/sevenhills/image/upload/v1597211526/Untitled_design_293d510cee.jpg"
-        alt2="Sevenhills tirupati"
-        />
-        <div className="headsection">
-        <Container>
-        <Row xs="1" md="2" lg="4">
-         <Col lg="7" md="6">
+        
+{/* Headsection */}
+        <div className="head">
+         <Row xs="1" md="5" lg="4">
+         <Col lg="4" md="3">
          <h2>SpotLight</h2>
          <hr/>
          {data.allStrapiFeatureds.nodes.map(featured=>(
@@ -51,7 +50,7 @@ const IndexPage = ({data}) => {
          />
          ))}
          </Col>
-         <Col lg="5" md="6">
+         <Col lg="4" md="3">
          <h1>Events</h1>
          <hr/>
          <EventCard className="hover"/>
@@ -61,7 +60,36 @@ const IndexPage = ({data}) => {
          <hr/>
          <Event className="hover"/>
          </Col>
+         <Col lg="4" md="3">
+         <h1>Corona live cases</h1>
+         <hr/>
+         <Coronacard/>
+         <h1>Darshan live Count</h1>
+         <hr/>
+         <Darshancount/>
+         <h1>Rules to get featured</h1>
+         <hr/>
+         <Link to="/rules">
+         <Button outline color="dark"><FaVoteYea size={30}/></Button>
+         </Link>
+
+         </Col>
         </Row>
+        </div>
+        <div>
+        <hr className="divider"/>
+
+
+
+
+        {/* slider */}
+        <Container>
+        <Slider
+        img1="https://res.cloudinary.com/sevenhills/image/upload/v1597211526/Untitled_design_1_eff8cc4010.jpg"
+        alt1="Sevenhills tirupati"
+        img2="https://res.cloudinary.com/sevenhills/image/upload/v1597211526/Untitled_design_293d510cee.jpg"
+        alt2="Sevenhills tirupati"
+        />
         </Container>
         </div>
         <hr className="divider"/>
@@ -84,7 +112,6 @@ const IndexPage = ({data}) => {
          />
          <hr/>
          </Col>
-         
           ))}
 
         </Row>

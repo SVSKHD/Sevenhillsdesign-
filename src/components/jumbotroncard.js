@@ -6,7 +6,7 @@ import {FaYoutube} from "react-icons/fa"
 
 export default function Event(){
   return (
-    <div >
+    <div className="hover">
       <Jumbotron className="jumbo" fluid>
         <Container fluid>
           <h1 className="heading">Our Youtube Channel</h1>
