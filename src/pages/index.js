@@ -18,6 +18,7 @@ import Coronacard from "../components/coronacard";
 import {FaVoteYea} from "react-icons/fa"
 import {Link} from "gatsby"
 import Darshancount from "../components/Darshancount";
+import Newstabcard from "../components/newstabcard";
 
 
 
@@ -33,6 +34,14 @@ const IndexPage = ({data}) => {
         image={seoImage}
         />
         <LandingpageSchema/>
+
+        {/* news section */}
+        <Container>
+          
+          <hr/> 
+         <Newstabcard/>
+          <hr/>
+        </Container>
         
 {/* Headsection */}
         <div className="head">
