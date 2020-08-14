@@ -76,6 +76,7 @@ text-align: center;
 .newscardimg{
 height: 200px;
 width: auto ;
+border-radius: 8rem;
 }
 .typed{
     font-family: Helvetica;

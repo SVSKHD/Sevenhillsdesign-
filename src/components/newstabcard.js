@@ -1,8 +1,7 @@
 import React from 'react'
 import { Card, Button, CardHeader, CardFooter, CardBody,
   CardTitle} from 'reactstrap'
-  import logo from "../images/logo.png"
-  import Img from "gatsby-image"
+  import logo from "../images/logo.jpg"
   import Typed from "react-typed"
   import "./css/card.css"
 
@@ -10,7 +9,7 @@ export default function Newstabcard(props) {
     return (
         <div>
         <Card className="newstab">
-        <CardHeader><h2>Scroller</h2></CardHeader>
+        
         <CardBody>
         <CardTitle><h3>{props.title}</h3></CardTitle>
         <img className="newscardimg" src={logo}/>
