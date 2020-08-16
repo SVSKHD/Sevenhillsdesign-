@@ -13,21 +13,17 @@
     text-align: center;
 }
 .featuredtitle{
-    font-size: 2.2rem;
-    font-weight: bold;
+    font-size: 2rem;
     font-style: italic;
     color: darkslategrey;
-    font-family: Helvetica;
 }
 .featuredsecondtitle{
     font-size: 1rem;
     color: darkslategray;
-    font-family: Helvetica;
     font-style: italic;
 }
 .featuredtext{
     font-size: 1rem;
-    font-weight: bold;
     font-style: italic;
     color: darkslategray;
 
@@ -79,6 +75,5 @@ width: auto ;
 border-radius: 8rem;
 }
 .typed{
-    font-family: Helvetica;
     font-size: 2rem;
 }

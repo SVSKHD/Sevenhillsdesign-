@@ -30,9 +30,9 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://sevenhillscms.herokuapp.com`,
+        apiURL: `http://localhost:1337`,
         queryLimit: 10000, 
-        contentTypes: [`blogposts`,`featureds`,`titleimages`],
+        contentTypes: [`blogposts`,`featureds`,`titleimages`,`corona-cases`],
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -56,6 +56,14 @@ module.exports = {
         display: `minimal-ui`,
         icon:`./src/images/logo.png` 
       },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Bungee','Suez One','Russo One','Staatliches']
+        }
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

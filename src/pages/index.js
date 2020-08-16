@@ -72,7 +72,12 @@ const IndexPage = ({data}) => {
          <Col lg="4" md="3">
          <h1>Corona live cases</h1>
          <hr/>
-         <Coronacard/>
+         <Link to="/corona">
+          <Coronacard
+          Title={<h3>Live corona casses record</h3>}
+          />
+         </Link>
+
          <h1>Darshan live Count</h1>
          <hr/>
          <Darshancount/>
@@ -174,6 +179,7 @@ export const pageQuery=graphql`
       }
     }
   }
+
 }
 
 `
