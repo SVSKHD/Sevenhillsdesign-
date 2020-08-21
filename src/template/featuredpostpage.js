@@ -72,8 +72,8 @@ export default function Featuredpostpage({data}) {
 }
 
 export const featurepost=graphql`
-query featuredQuery {
-    strapiFeatureds {
+query featuredQuery ($id:String!){
+    strapiFeatureds (id:{eq: $id}) {
       Title
       Subtitle
       Content

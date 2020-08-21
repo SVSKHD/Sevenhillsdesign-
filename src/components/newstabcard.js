@@ -16,7 +16,7 @@ export default function Newstabcard(props) {
         <div className="typed">
         <Typed
             strings={["Everything about Tirupati", "Everything about Tirumala", "Everything about Govinda"]}
-            typeSpeed={50}
+            typeSpeed={90}
             backSpeed={50}
             backDelay={1}
             loop
