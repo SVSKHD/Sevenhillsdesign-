@@ -25,7 +25,7 @@ export default function Blogpage({data}) {
                  <div className="return">
                   <Container>
                   <Link to="/">
-                  <Button outline color="danger">
+                  <Button outline color="light">
                   <FaBackward size={25}/>
                   </Button>
                   </Link>
@@ -38,7 +38,7 @@ export default function Blogpage({data}) {
                   </Col>
                   <Col>
                   <h1>{data.strapiBlogposts.Title}</h1>
-                  <h2>{data.strapiBlogposts.SubTitle}</h2>
+                  <h3>{data.strapiBlogposts.SubTitle}</h3>
                   <hr/>
                   <div>
                   <BlogpageCollpasible/>

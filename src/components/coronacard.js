@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown'
 const Coronacard=({Title,Content})=> {
     return (
         <div className="hover">
-        <Card body inverse color="danger">
+        <Card body inverse color="warning">
         <CardTitle>{Title}</CardTitle>
         <CardText><ReactMarkdown>{Content}</ReactMarkdown></CardText>
         <Container>

@@ -5,7 +5,7 @@ import {FaFacebookF,FaTwitter,FaInstagram,FaShareAlt} from "react-icons/fa"
 export default function BlogpageCollpasible(props) {
     return (
         <div>
-    <Button outline color="info" id="toggler" style={{ marginBottom: '1rem' }}>
+    <Button outline color="light" id="toggler" style={{ marginBottom: '1rem' }}>
       <FaShareAlt size={25}/>
     </Button>
     <UncontrolledCollapse toggler="#toggler">

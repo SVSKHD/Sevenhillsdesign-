@@ -25,7 +25,7 @@ export default function Featuredpostpage({data}) {
            <div className="return">
                   <Container>
                   <Link to="/">
-                  <Button outline color="danger">
+                  <Button outline color="light">
                   <FaBackward size={25}/>
                   </Button>
                   </Link>
@@ -35,9 +35,13 @@ export default function Featuredpostpage({data}) {
            <Row>
            <Col>
            <div className="Titles">
+         
+          <Jumbotron className="featurepagetitle">
            <h1>{data.strapiFeatureds.Title}</h1>
-           <h2>{data.strapiFeatureds.Subtitle}</h2>
-           </div>
+           <h5>{data.strapiFeatureds.Subtitle}</h5>
+          </Jumbotron>
+        
+            </div>
            <Img className="img" width="100%" fluid={data.strapiFeatureds.Cover.childImageSharp.fluid} alt={data.strapiFeatureds.Subtitle}/>
            </Col>
            </Row>

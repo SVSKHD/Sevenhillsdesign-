@@ -21,7 +21,7 @@ const Headnav = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className="headnav">
       <Navbar light expand="md">
         <NavbarBrand href="/"><h4 className="navtitle">SevenHills</h4></NavbarBrand>
         <NavbarToggler outline color="dark" onClick={toggle}><FaGopuram size={26}/></NavbarToggler>

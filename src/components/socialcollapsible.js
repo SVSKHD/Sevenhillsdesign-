@@ -6,7 +6,7 @@ import "./css/card.css"
 export default function SocialCollapsible () {
   return(
   <div>
-    <Button outline color="info" id="toggler" style={{ marginBottom: '1rem' }}>
+    <Button outline color="light" id="toggler" style={{ marginBottom: '1rem' }}>
         <FaBullhorn size={25}/>
     </Button>
     <UncontrolledCollapse toggler="#toggler">

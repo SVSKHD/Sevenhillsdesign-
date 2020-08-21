@@ -1,8 +1,13 @@
 .Titles{
 padding: 3rem;
 }
+.featurepagetitle{
+    background-color: whitesmoke;
+    color: #e79c2a;
+}
 .Content{
     padding: 3rem;
+    color: #111d5e;
 }
 .img{
     border-radius: 2rem;

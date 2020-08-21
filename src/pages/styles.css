@@ -1,5 +1,14 @@
 body{
     font-family: Staatliches;
+    background-image: linear-gradient(to right top, #111d5e, #451b65, #6c1265, #8e035e, #aa0052, #bb074a, #c91940, #d52b34, #de3e30, #e6502b, #ed6126, #f37121);
+    color: aliceblue;
+}
+.headnav{
+    border-radius: 2rem;
+    background-color: white;
+}
+.headnavalign{
+    padding: 2rem ;
 }
 .navtitle{
     font-weight: bold;
@@ -17,9 +26,18 @@ body{
 }
 
 .footer{
-    background-color: #222831;
+    background-color: white;
     text-align: center;
-    color: azure;
+    color:grey;
+    border-radius: 1rem;
+}
+.footeralign{
+    padding: 3rem 0;
+    
+}
+.align{
+    padding: 2rem;
+    
 }
 .hr{
     background-color: antiquewhite;

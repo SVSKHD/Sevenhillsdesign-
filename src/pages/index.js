@@ -51,8 +51,6 @@ const IndexPage = ({data}) => {
          <hr/>
          {data.allStrapiFeatureds.nodes.map(featured=>(
          <Featuredcard 
-         title={featured.Title}
-         content={featured.Content}
          fluid={featured.Cover.childImageSharp.fluid}
          time={featured.createdAt}
          link={Featuredslugtourl(featured.slug)}
@@ -84,7 +82,7 @@ const IndexPage = ({data}) => {
          <h1>Rules to get featured</h1>
          <hr/>
          <Link to="/rules">
-         <Button outline color="dark"><FaVoteYea size={30}/></Button>
+         <Button outline color="light"><FaVoteYea size={30}/></Button>
          </Link>
 
          </Col>
