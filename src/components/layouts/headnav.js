@@ -13,6 +13,7 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import {Link} from "gatsby"
 import {FaGopuram} from "react-icons/fa"
 
 const Headnav = (props) => {
@@ -40,6 +41,25 @@ const Headnav = (props) => {
                 </DropdownItem>
                 <DropdownItem>
                   FoodBloggers
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  More
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Places to visit
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                  <Link to="/Srikalahasthi">
+                  Sri Kalahasthi
+                  </Link>
+                </DropdownItem>
+                <DropdownItem>
+                 Kanipakam
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>

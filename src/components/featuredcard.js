@@ -15,7 +15,7 @@ export default function Featuredcard({title, content, fluid, time, link }) {
         <CardText>
         <small><h7 className="featuredtext">{time}</h7></small><br/>
         <Link to={link}>
-         <Button className="featuredbutton" outline color ="light"><FaBlog size={28}/></Button>
+         <Button className="featuredbutton" outline color ="dark"><FaBlog size={28}/></Button>
         </Link>
         </CardText>
         </CardImgOverlay>
