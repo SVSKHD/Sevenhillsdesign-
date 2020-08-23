@@ -61,7 +61,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Bungee','Suez One','Russo One','Staatliches']
+          families: ['Bungee','Suez One','Russo One','Staatliches', 'Roboto']
         }
       }
     },

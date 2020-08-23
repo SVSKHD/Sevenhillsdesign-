@@ -48,13 +48,13 @@ export default function Featuredpostpage({data}) {
            </Container>
            
            <div className="Content">
-             
              <Container>
                <Jumbotron className="contentplacer">
                <ReactMarkdown>{data.strapiFeatureds.Content}</ReactMarkdown>
                </Jumbotron>
             </Container>
            </div>
+
            {/* Blog end section */}
             <Container>
              <Row>

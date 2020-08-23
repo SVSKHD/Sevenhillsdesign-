@@ -9,7 +9,8 @@ export default function Srikalahasthi() {
              <Seo
              title="Srikalahasthi | Frontpage of Kalahasthi "
              description="We are here to explain all about the secrets and hidden stories of Sri kalahasthi well we have versed genuine stories of kalahasthi and we dedicate this page to Our Lord Siva 'Hara Hara mahadev'"
-             keywords="kalahasthi, Sri kalahasthi, SevenhillsTirupati, kalahasthi news, "
+             keywords="kalahasthi, Sri kalahasthi, SevenhillsTirupati, kalahasthi news,"
+             
              />
 
             </Layout>
