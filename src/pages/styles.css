@@ -15,6 +15,9 @@ body{
     font-style: italic;
     color: #ff4301;
 }
+.blogfeed{
+    color: #e6502b;
+}
 .divider{
     border-style: dashed;
     border-width: 0.1rem;

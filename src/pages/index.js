@@ -107,6 +107,7 @@ const IndexPage = ({data}) => {
         <hr className="divider"/>
 
         {/* regular feed */}
+        <div className="blogfeed">
         <Container className="regularfeed">
          <div className="feed">
         <Button outline color="success" ><h2>Intresting feed</h2></Button>
@@ -128,6 +129,7 @@ const IndexPage = ({data}) => {
 
         </Row>
         </Container>
+         </div>
       </Layout>
     </div>
 )
