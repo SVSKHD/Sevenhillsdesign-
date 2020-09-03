@@ -69,7 +69,7 @@ export default function Featuredpostpage({data}) {
              </Row>
             </Container>
 
-            <div className="endsection">
+              <div className="endsection">
                <Container>
                <Jumbotron className="endingnote">
                <h3>bind with us</h3>
