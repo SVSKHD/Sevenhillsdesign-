@@ -73,3 +73,15 @@ border-radius: 8rem;
 .typed{
     font-size: 2rem;
 }
+
+.timecard{
+    text-align: center;
+    color: #fec84e;
+    transition: 1s ease;
+}
+.timecard:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+}

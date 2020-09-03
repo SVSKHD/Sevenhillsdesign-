@@ -16,6 +16,7 @@ body{
     color: #ff4301;
 }
 .blogfeed{
+    text-align: center;
     color: #e6502b;
 }
 .divider{
@@ -32,7 +33,7 @@ body{
     background-color: white;
     text-align: center;
     color:grey;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 .footeralign{
     padding: 3rem 0;
@@ -60,4 +61,10 @@ body{
 .featured{
     height: 400px;
     width: 400px;
+}
+
+
+/* featuredpage */
+.featuredfeed{
+    padding:2rem;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Jumbotron, Container,Row,Col,Button } from 'reactstrap';
 import {FaInstagram, FaFacebookF, FaFacebookMessenger,FaNewspaper } from "react-icons/fa"
 
+
 export default function Footer (props) {
   const date=new Date().getFullYear();
     return (

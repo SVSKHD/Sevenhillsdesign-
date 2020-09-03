@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import {FaBlog} from "react-icons/fa"
 import "./css/card.css"
 
-export default function Featuredcard({title, content, fluid, time, link }) {
+export default function Featuredcard({title, content, fluid, time, link,linkt }) {
     return (
         <Link to={link}>
         <div className="featuredcard">

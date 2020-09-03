@@ -31,7 +31,7 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `https://sevenhillscms.herokuapp.com`,
-        queryLimit: 10000, 
+        queryLimit: 1000, 
         contentTypes: [`blogposts`,`featureds`,`titleimages`,`corona-cases`],
       },
     },
@@ -48,8 +48,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Sevenhills Tirupati | Front page of Tirupati & Tirumala`,
+        short_name: `SevenHills Tirupati`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -61,7 +61,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Bungee','Suez One','Russo One','Staatliches', 'Roboto']
+          families: ['Russo One','Staatliches', 'Roboto']
         }
       }
     },

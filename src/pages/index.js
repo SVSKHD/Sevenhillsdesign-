@@ -46,7 +46,9 @@ const IndexPage = ({data}) => {
         <div className="head">
          <Row xs="1" md="5" lg="4">
          <Col lg="4" md="3">
-         <h2>SpotLight</h2>
+         <Link to={"/featured"}>
+         <Button outline color="light"><h2>SpotLight</h2></Button>
+         </Link>
          <hr/>
          {data.allStrapiFeatureds.nodes.map(featured=>(
          <Featuredcard 
@@ -109,7 +111,9 @@ const IndexPage = ({data}) => {
         <div className="blogfeed">
         <Container className="regularfeed">
          <div className="feed">
-        <Button outline color="success" ><h2>Intresting feed</h2></Button>
+        <Link to={"/blog"}>
+        <Button outline color="light" ><h2>Intresting feed</h2></Button>
+        </Link>
         </div>
         <Row xs="1" lg="3" md="4" >
         
