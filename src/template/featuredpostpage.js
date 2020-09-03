@@ -59,12 +59,24 @@ export default function Featuredpostpage({data}) {
             <Container>
              <Row>
               <Col>
-              <BlogpageCollpasible/>
+              <BlogpageCollpasible
+              linkF={"https://www.facebook.com/sharer.php?u=https://www.sevenhillstirupati.com/featured/"+`${data.strapiFeatureds.slug}`}
+              linkT={"https://twitter.com/intent/tweet?url=https://www.sevenhillstirupati.com/featured/"+`${data.strapiFeatureds.slug}`}
+              />
               </Col>
               <Col>
               </Col>
              </Row>
             </Container>
+
+            <div className="endsection">
+               <Container>
+               <Jumbotron className="endingnote">
+               <h3>bind with us</h3>
+               <h2 className="endfont">SEVENHILLS TIRUPATI</h2>
+               </Jumbotron>
+               </Container>
+              </div>
 
             </Layout>
         </div>

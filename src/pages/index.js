@@ -34,7 +34,6 @@ const IndexPage = ({data}) => {
         image={seoImage}
         />
         <LandingpageSchema/>
-
         {/* news section */}
         <Container>
           

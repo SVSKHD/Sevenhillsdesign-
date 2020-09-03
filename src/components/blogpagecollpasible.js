@@ -13,7 +13,6 @@ export default function BlogpageCollpasible(props) {
         <CardBody>
          <Button className="BS" href={props.linkF} target="_blank"><FaFacebookF size={25}/> </Button>
          <Button className="BS"  href={props.linkT} target="_blank"><FaTwitter size={25}/> </Button>
-         <Button className="BS" href={props.link} target="_blank"><FaInstagram size={25}/> </Button>
         </CardBody>
       </Card>
     </UncontrolledCollapse>

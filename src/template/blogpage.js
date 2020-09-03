@@ -41,7 +41,13 @@ export default function Blogpage({data}) {
                   <h3>{data.strapiBlogposts.SubTitle}</h3>
                   <hr/>
                   <div>
-                  <BlogpageCollpasible/>
+                  <h3>Share to your freinds</h3>
+                  
+                  <BlogpageCollpasible
+                  linkF={"https://www.facebook.com/sharer.php?u=https://www.sevenhillstirupati.com/blog/"+`${data.strapiBlogposts.slug}`}
+                  linkT={"https://twitter.com/intent/tweet?url=https://www.sevenhillstirupati.com/blog/"+`${data.strapiBlogposts.slug}`}
+                  />
+                  <hr/>
                   </div>
                   </Col>
                  </Row>
@@ -51,18 +57,31 @@ export default function Blogpage({data}) {
                <hr/>
                </Container>
 
-               <div className="contentposition">
+               <div>
                <Container>
                 <Row>
                 <Col>
                <Jumbotron className="blogpagecontent" fluid>
+                 <Container>
                 <ReactMarkdown className="Content">{data.strapiBlogposts.Content}</ReactMarkdown>
+                 </Container>
                </Jumbotron>
                </Col>
                </Row>
                </Container>
                </div>
+
+              <div className="endsection">
+               <Container>
+               <Jumbotron className="endingnote">
+               <h3>bind with us</h3>
+               <h2 className="endfont">SEVENHILLS TIRUPATI</h2>
+               </Jumbotron>
+               </Container>
+              </div>
+               
                </div>
+
             </Layout>
         </div>
     )

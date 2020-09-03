@@ -10,11 +10,19 @@
 .blogpagecontent:hover{
     box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
 }
-.contentposition{
-    padding: 2rem 0;
-   
-}
 .Content{
     font-size: 1.2rem;
-    font-weight: bold;
+}
+.endsection{
+    padding: 1rem;
+
+}
+.endingnote{
+    background-color: white;
+    color: grey;
+    text-align: center;
+}
+.endfont{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #DAA520;
 }
